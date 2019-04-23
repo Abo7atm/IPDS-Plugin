@@ -1,0 +1,8 @@
+<div align="center" color="white" id="Phish" style="position: fixed; width: 50%; height: 50%; opacity: 1; z-index: 1500; background: red; top: 0px; right: 0px; bottom: 0px; left: 0px; margin: auto;">
+    <p style="color: white; text-align: left; font-size: 20px;">Phishing website!</p>
+    <p style="color: white; text-align: left; font-size: 16px;">https://www.google.com/ is predicted to be a Phishing website!</p>
+<button style="background-color: green; border: none; border-radius: 8px; color: white; padding: 8px 16px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 80px 2px; cursor: pointer; font-weight: bold;">Back to safety</button>
+<script type="text/javascript">function FContinue() {var x = document.getElementById('Phish'); while(x!=null){document.body.removeChild(x);x=document.getElementById('Phish');}}</script>
+<button onclick="reportNP()" style="background-color: rgb(20, 154, 187); border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 80px 2px; cursor: pointer; font-weight: bold;">Not phishing</button>
+<script type="text/javascript">function reportNP(){portb.postMessage('give me url');portb.onMessage.addListener(function(msg) {console.log('message recieved ' + msg); Http = new XMLHttpRequest();var msgA = msg.split(':');var url; if(msgA[0] == 'https'){url ='https://utttu2.pythonanywhere.com/report/'+ msg + 0;} else{url='http://utttu2.pythonanywhere.com/report/'+ msg + 0;}Http.open('GET', url);Http.send();var x = document.getElementById('Phish'); while(x!=null){document.body.removeChild(x);x=document.getElementById('Phish');}}</script>
+</div>

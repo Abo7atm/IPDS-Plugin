@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Phishing Detection",
-  "version": "0.01",
+  "version": "0.1",
   "icons":{ "16":"c.png",
             "48": "c.png",
             "128": "c.png"},
@@ -18,13 +18,14 @@
     }
   ],
   "permissions": [
-   "tabs"
-],
-"background":{
-  "scripts":["background.js"]
-},
-"browser_action": {
-    "default_icon":"c.png",
+    "tabs",
+    "storage"
+  ],
+  "background":{
+    "scripts":["background.js"]
+  },
+  "browser_action": {
+    "default_icon":"c2.png",
     "default_popup":"popup.html",
     "default_title":"Phishing?"
   }
